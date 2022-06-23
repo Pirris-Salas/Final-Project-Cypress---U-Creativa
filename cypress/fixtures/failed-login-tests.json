@@ -1,0 +1,22 @@
+[
+    {
+        "tc":"Username Text Field Empty",
+        "username":"",
+        "password": "secret_sauce",
+        "errorMessage":"Epic sadface: Username is required"
+    },
+
+    {
+        "tc":"Password Text Field Empty",
+        "username":"standard_user",
+        "password": "",
+        "errorMessage":"Epic sadface: Password is required"
+    },
+
+    {
+        "tc":"Incorrect Password",
+        "username":"standard_user",
+        "password": "testing25",
+        "errorMessage":"Epic sadface: Username and password do not match any user in this service"
+    }
+]
