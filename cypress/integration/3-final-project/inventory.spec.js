@@ -83,7 +83,7 @@ describe("Final Project - Inventory Module Tests", () => {
     });
   });
 
-  it.only("Testing - Sort Price Low to High", () => {
+  it("Testing - Sort Price Low to High", () => {
     inventoryPage.elements.productSortContainer().select(`Price (low to high)`);
     inventoryPage.elements.productSortContainer().should("have.value", "lohi");
 
