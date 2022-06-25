@@ -2,7 +2,6 @@ const inventoryPage = require("../../pages/inventory-page");
 const inventorySidebarMenuPage = require("../../pages/inventory-sidebar-menu-page");
 
 describe("Final Project - Menu Tests", () => {
-  let counter = 0;
   beforeEach(() => {
     cy.visit("https://www.saucedemo.com/");
     cy.fixture("correct-login-credentials").then((data) => {
