@@ -1,4 +1,4 @@
-class productInfoPage{
+class productsInventoryPage{
 
     elements = {
         productImage: () => '.inventory_item_img img',
@@ -8,4 +8,4 @@ class productInfoPage{
     }
 
 }
-module.exports = new productInfoPage()
+module.exports = new productsInventoryPage()

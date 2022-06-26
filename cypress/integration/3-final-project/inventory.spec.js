@@ -1,5 +1,5 @@
 const inventoryPage = require("../../pages/inventory-page");
-const productInfoPage = require("../../pages/product-info-page");
+const productsInventoryPage = require("../../pages/products-inventory-page");
 
 describe("Final Project - Inventory Module Tests", () => {
   beforeEach(() => {
@@ -27,7 +27,7 @@ describe("Final Project - Inventory Module Tests", () => {
     cy.fixture("product-names").then((productName) => {
       inventoryPage.elements
         .inventoryProductList()
-        .find(productInfoPage.elements.productName())
+        .find(productsInventoryPage.elements.productName())
         .each((elements, index) => {
           cy.wrap(elements)
             .invoke("text")
@@ -42,7 +42,7 @@ describe("Final Project - Inventory Module Tests", () => {
     cy.fixture("product-img-names").then((productImgName) => {
       inventoryPage.elements
         .inventoryProductList()
-        .find(productInfoPage.elements.productImage())
+        .find(productsInventoryPage.elements.productImage())
         .each((elements, index) => {
           cy.wrap(elements)
             .invoke("attr", "alt")
@@ -57,7 +57,7 @@ describe("Final Project - Inventory Module Tests", () => {
     cy.fixture("product-prices").then((productPrice) => {
       inventoryPage.elements
         .inventoryProductList()
-        .find(productInfoPage.elements.productPrice())
+        .find(productsInventoryPage.elements.productPrice())
         .each((elements, index) => {
           cy.wrap(elements)
             .invoke("text")
@@ -72,7 +72,7 @@ describe("Final Project - Inventory Module Tests", () => {
     cy.fixture("add-to-cart-button-states").then((buttonState) => {
       inventoryPage.elements
         .inventoryProductList()
-        .find(productInfoPage.elements.addToCartBtn())
+        .find(productsInventoryPage.elements.addToCartBtn())
         .each((elements) => {
           cy.wrap(elements)
             .invoke("text")
@@ -96,7 +96,7 @@ describe("Final Project - Inventory Module Tests", () => {
 
       inventoryPage.elements
         .inventoryProductList()
-        .find(productInfoPage.elements.productPrice())
+        .find(productsInventoryPage.elements.productPrice())
         .each((elements, index) => {
           cy.wrap(elements)
             .invoke("text")
